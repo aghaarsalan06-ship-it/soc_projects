@@ -26,14 +26,14 @@ SMB was used as the final, successful attack vector.
 
 **Initial attempt (RDP) — unsuccessful:**
 hydra -L users.txt -P passwords.txt rdp://10.0.2.15
-(./Screenshots/04a- rdp.png)
+(./Screenshots/04a-rdp.png)
 
 > Result: Connection failed to establish. Hydra's RDP module is experimental 
 and known to be unreliable with modern Windows RDP security negotiation.
 
 **Final attempt (SMB) — successful:**
 hydra -L users.txt -P passwords.txt smb://10.0.2.15
-(./Screenshots/05-hydra attack smb.png)
+(./Screenshots/05-hydra_attack_smb.png)
 
 
 
@@ -52,7 +52,7 @@ hydra -L users.txt -P passwords.txt smb://10.0.2.15
 - **Event ID 4625** (Failed Logon) — multiple entries observed, matching the timestamp of the Hydra run, source IP 10.0.2.6
 - **Event ID 4624** (Successful Logon) — one entry immediately following the failed attempts, same source IP
 
-![Event Viewer - Failed Logons](./Screenshots/06-EventViewer.png)
+![Event Viewer - Failed Logons](./Screenshots/06-Event_Viewer.png)
 
 ---
 
@@ -65,7 +65,7 @@ index=* EventCode=4625
 index=* EventCode=4624
 
 
-![Splunk Search Results](./Screenshots/09-successfull logon.png)
+![Splunk Search Results](./Screenshots/09-successfull_logon.png)
 
 ---
 
