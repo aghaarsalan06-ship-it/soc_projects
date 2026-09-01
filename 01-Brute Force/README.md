@@ -26,14 +26,14 @@ SMB was used as the final, successful attack vector.
 
 **Initial attempt (RDP) — unsuccessful:**
 hydra -L users.txt -P passwords.txt rdp://10.0.2.15
-(./Screenshots/04a-rdp.png)
+![RDP](./Screenshots/04a-rdp.png)
 
 > Result: Connection failed to establish. Hydra's RDP module is experimental 
 and known to be unreliable with modern Windows RDP security negotiation.
 
 **Final attempt (SMB) — successful:**
 hydra -L users.txt -P passwords.txt smb://10.0.2.15
-(./Screenshots/05-hydra_attack_smb.png)
+![Hydra](./Screenshots/05-hydra_attack_smb.png)
 
 
 
