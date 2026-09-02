@@ -25,4 +25,4 @@ I'm Arsalan Agha, a Computer Network and Security student. This repo is where I 
 - Incident documentation and reporting
 
 ## Connect
-- 🔗 [LinkedIn](arsalan-agha-963b982b9)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/arsalan-agha-963b982b9/)
